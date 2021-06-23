@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snake game</title>
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #gameArea {
+            border: 4px solid rgb(255, 4, 4);
+        }
+
+        button {
+            width: 200px;
+            font-size: 20px;
+            margin: 7px 200px;
+        }
+
+        #score {
+            position: absolute;
+            font-size: 59px;
+            left: 200px;
+            top: 306px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Snake Game</h1>
+    <button onclick="loadGame();">Play</button>
+    <h1 id="score"></h1>
+    <canvas id="gameArea"></canvas>
+    <script src="index.js"></script>
+</body>
+
+</html>
